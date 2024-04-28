@@ -1,7 +1,7 @@
 <div align="center">
     
 # `LinTools`
-#### LinTools is an applet-based batch script designed to perform various system maintenance tasks on a Windows computer. The script is intended to be run with administrative privileges to ensure that it can execute the required commands successfully. It provides a simple command-line interface where users can choose from a selection of commands to perform specific tasks.
+#### LinTools is an applet-based batch script designed to perform various system maintenance tasks on a Linux computer. The script is intended to be run with administrative privileges to ensure that it can execute the required commands successfully. It provides a simple command-line interface where users can choose from a selection of commands to perform specific tasks.
 </div>
 
 > [!TIP]
