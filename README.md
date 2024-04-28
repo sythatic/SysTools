@@ -1,7 +1,7 @@
 <div align="center">
     
-# `WinTools`
-#### WysTools is a collection of applet-based utilities built on batch, powershell, and shell script. These tools are designed to perform various system maintenance tasks on Windows, macOS, and Linux computers. Some applet scripts are intended to be run with administrative privileges to ensure that they can execute the required commands successfully. It provides a simple command-line interface where users can choose from a list of commands to perform specific tasks.
+# `SysTools`
+#### SysTools is a collection of applet-based utilities built on batch, powershell, and shell script. These tools are designed to perform various system maintenance tasks on Windows, macOS, and Linux computers. Some applet scripts are intended to be run with administrative privileges to ensure that they can execute the required commands successfully. It provides a simple command-line interface where users can choose from a list of commands to perform specific tasks.
 </div>
 
 > [!WARNING]
