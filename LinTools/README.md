@@ -5,7 +5,7 @@
 </div>
 
 > [!TIP]
-> 1. You can access LinTools from the Start Menu or by searching for it.
+> 1. You can access LinTools from the 'Home' folder or via `lintools` in the terminal.
 > 2. Once executed, the script will display a list of available commands.
 > 3. Enter the desired command's keyword and press Enter to execute the selected task.
 
@@ -23,6 +23,6 @@
 >
 > **[Webloc Converter](https://github.com/sythatic/Webloc-Decoder)**
 > 
->    - `wlocconv.cmd`
+>    - `wlocconv.sh`
 >    - Converts macOS Website Location Files (.webloc) to standard URL files.
 > 
