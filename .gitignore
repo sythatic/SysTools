@@ -8,10 +8,6 @@
 *.zip
 *.img
 
-*.afphoto
-*.afdesign
-*.afpub
-
 .DS_Store
 .DS_Store?
 ._*
