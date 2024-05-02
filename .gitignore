@@ -1,13 +1,3 @@
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-*.img
-
 .DS_Store
 .DS_Store?
 ._*
