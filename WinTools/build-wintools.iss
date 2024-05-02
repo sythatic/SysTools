@@ -16,7 +16,7 @@ UninstallFilesDir={win}\wintools
 UninstallDisplayIcon={win}\wintools\unins000.exe
 
 [Files] 
-Source: ".\files\start\*"; DestDir: "{commonprograms}\Administrative Tools"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: ".\files\shortcuts\*"; DestDir: "{commonprograms}\Administrative Tools"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: ".\files\applets\*"; DestDir: "{win}\wintools\applets"; Flags: ignoreversion recursesubdirs createallsubdirs                    
 Source: ".\files\index\*"; DestDir: "{win}\wintools\index"; Flags: ignoreversion recursesubdirs createallsubdirs    
 Source: ".\files\packages\*"; DestDir: "{win}\wintools\packages"; Flags: ignoreversion recursesubdirs createallsubdirs   
