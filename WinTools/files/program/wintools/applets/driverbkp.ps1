@@ -1,1 +1,0 @@
-Export-WindowsDriver -Online -Destination "%userprofile%\SysDriverBkp"
