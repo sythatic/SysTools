@@ -14,7 +14,7 @@ if not exist "%extract_dir%" (
     goto top
 )
 
-powershell -Command "Expand-Archive -Path %SystemRoot%\wintools\packages\mcsl.zip -DestinationPath '%extract_dir%' -Force"
+powershell -Command "Expand-Archive -Path %SystemRoot%\wintools\packages\pkg.mcsl.zip -DestinationPath '%extract_dir%' -Force"
 
 if errorlevel 1 (
     echo Extraction Failed - Error 002  *PLEASE REPORT THIS ERROR*
