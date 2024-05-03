@@ -11,3 +11,4 @@ for %%F in (*.webloc) do (
         echo URL=!line! >> "!OutputFile!"
     )
 )
+exit /b 0

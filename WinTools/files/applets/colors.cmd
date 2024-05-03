@@ -49,3 +49,4 @@ echo  ^<ESC^>[106m [106mCyan[0m
 echo  ^<ESC^>[107m [107mWhite[0m
 echo:
 pause
+exit /b 0

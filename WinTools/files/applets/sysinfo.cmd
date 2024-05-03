@@ -24,3 +24,4 @@ reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\OEMInformation" /f /v "M
 reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\OEMInformation" /f /v "Model" /d "%model%"
 reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\OEMInformation" /f /v "SupportURL" /d "%url%"
 start explorer.exe
+exit /b 0

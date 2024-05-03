@@ -16,3 +16,4 @@ echo:
 pause
 echo:
 start slidetoshutdown.exe
+exit /b 0

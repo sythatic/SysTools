@@ -32,3 +32,4 @@ echo     - Nothing is blocked and there are no warnings or prompts.
 echo     - There is a risk of running malicious scripts. 
 echo:
 pause
+exit /b 0

@@ -1,4 +1,4 @@
-@echo off
+@echo off & title WinTools
 net session >nul 2>&1
 if %errorLevel% equ 0 (
     goto top
@@ -10,11 +10,7 @@ if %errorLevel% equ 0 (
     exit
 )
 :top
+cd %SystemRoot%
 echo:
-dism /Online /Cleanup-Image /RestoreHealth
-echo:
-pause
-echo:
-start slidetoshutdown.exe
-echo:
-exit /b 0
+powershell "%SystemRoot%\wintools\applets\indexdl.ps1"
+exit /b 0 

@@ -11,3 +11,4 @@ if %errorLevel% equ 0 (
 )
 :top
 net user administrator /active:yes
+exit /b 0

@@ -22,3 +22,4 @@ echo:
 setx %evar% %eval% /M
 echo:
 start explorer.exe
+exit /b 0

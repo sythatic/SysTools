@@ -13,6 +13,8 @@ if %errorLevel% equ 0 (
 
 taskkill /f /im explorer.exe
 
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" /f /v link /t REG_Binary /d 15000000
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\NamingTemplates" /f /v ShortcutNameTemplate
 reg delete "HKLM\Software\Policies\Microsoft\Windows\Windows Search" /f
 reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "CortanaEnabled"
 reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /f /v "CortanaConsent"
@@ -69,3 +71,4 @@ reg add "HKLM\Software\Microsoft\Windows Photo Viewer\Capabilities\FileAssociati
 reg add "HKLM\Software\Microsoft\Windows Photo Viewer\Capabilities\FileAssociations" /f /v ".tif" /t REG_SZ /d "PhotoViewer.FileAssoc.Tiff"
 
 start explorer.exe
+exit /b 0

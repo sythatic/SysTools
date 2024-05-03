@@ -5,3 +5,4 @@ echo:
 pause
 echo:
 start explorer.exe
+exit /b 0

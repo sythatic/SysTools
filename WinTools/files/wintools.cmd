@@ -13,7 +13,7 @@ if %errorLevel% equ 0 (
 :top
 echo:
 echo   [104m WinTools [0m
-echo   [90m2404 [0m
+echo   [90m2405 [0m
 echo:
 cd %SystemRoot%
 echo   ID   Applet
@@ -41,3 +41,6 @@ for /f "delims=" %%a in ('type "%selectedApplet%"') do set "appletID=%%a"
 !appletID!
 set choice=
 goto prompt
+echo:
+echo [91m    [ERROR]
+echo:

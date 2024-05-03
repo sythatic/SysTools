@@ -16,3 +16,4 @@ dism /online /export-driver /destination:%userprofile%\%computername%-Drivers
 echo:
 pause
 echo:
+exit /b 0

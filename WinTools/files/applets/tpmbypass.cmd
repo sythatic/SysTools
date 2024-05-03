@@ -17,3 +17,4 @@ reg add "HKLM\System\Setup\LabConfig" /f /v "BypassRAMCheck" /t REG_DWORD /d 1
 reg add "HKLM\System\Setup\LabConfig" /f /v "BypassSecureBootCheck" /t REG_DWORD /d 1
 reg add "HKLM\System\Setup\MoSetup" /f /v "AllowUpgradesWithUnsupportedTPMOrCPU" /t REG_DWORD /d 1
 start explorer.exe
+exit /b 0

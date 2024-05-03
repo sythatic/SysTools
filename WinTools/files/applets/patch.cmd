@@ -13,6 +13,8 @@ if %errorLevel% equ 0 (
 
 taskkill /f /im explorer.exe
 
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" /f /v link /t REG_Binary /d 00000000
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\NamingTemplates" /f /v ShortcutNameTemplate
 reg add "HKLM\Software\Policies\Microsoft\Windows\Windows Search" /f /v "AllowCloudSearch" /t REG_DWORD /d 0
 reg add "HKLM\Software\Policies\Microsoft\Windows\Windows Search" /f /v "AllowCortana" /t REG_DWORD /d 0
 reg add "HKLM\Software\Policies\Microsoft\Windows\Windows Search" /f /v "AllowCortanaAboveLock" /t REG_DWORD /d 0
@@ -64,8 +66,8 @@ reg add "HKCR\Applications\photoviewer.dll\shell\open" /f /v "MuiVerb" /t REG_SZ
 reg add "HKCR\Applications\photoviewer.dll\shell\open\command" /f /ve /t REG_SZ /d "%SystemRoot%\System32\rundll32.exe \"%ProgramFiles%\Windows Photo Viewer\PhotoViewer.dll\", ImageView_Fullscreen %1"
 reg add "HKCR\Applications\photoviewer.dll\shell\open\DropTarget" /f /v "Clsid" /t REG_SZ /d "{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
 reg add "HKCR\Applications\photoviewer.dll\shell\print\command" /f /ve /t REG_SZ /d "%SystemRoot%\System32\rundll32.exe \"%ProgramFiles%\Windows Photo Viewer\PhotoViewer.dll\", ImageView_PrintTo %1"
-reg add "HKLM\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities" /f /v "ApplicationDescription" /t REG_EXPAND_SZ /d "@%ProgramFiles%\Windows Photo Viewer\photoviewer.dll,-3069"
-reg add "HKLM\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities" /f /v "ApplicationName" /t REG_EXPAND_SZ /d "@%ProgramFiles%\Windows Photo Viewer\photoviewer.dll,-3009"
+reg add "HKLM\Software\Microsoft\Windows Photo Viewer\Capabilities" /f /v "ApplicationDescription" /t REG_EXPAND_SZ /d "@%ProgramFiles%\Windows Photo Viewer\photoviewer.dll,-3069"
+reg add "HKLM\Software\Microsoft\Windows Photo Viewer\Capabilities" /f /v "ApplicationName" /t REG_EXPAND_SZ /d "@%ProgramFiles%\Windows Photo Viewer\photoviewer.dll,-3009"
 
 reg add "HKCR\PhotoViewer.FileAssoc.Bitmap" /f /v "ImageOptionFlags" /t REG_DWORD /d 1
 reg add "HKCR\PhotoViewer.FileAssoc.Bitmap\DefaultIcon" /f /ve /d "%SystemRoot%\System32\imageres.dll,-71"
@@ -155,3 +157,4 @@ reg add "HKCR\PhotoViewer.FileAssoc.Webp\shell\open\DropTarget" /f /v "Clsid" /t
 reg add "HKLM\Software\Microsoft\Windows Photo Viewer\Capabilities\FileAssociations" /f /v ".webp" /t REG_SZ /d "PhotoViewer.FileAssoc.Webp"
 
 start explorer.exe
+exit /b 0

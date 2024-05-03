@@ -16,3 +16,4 @@ powershell "Set-ExecutionPolicy"
 echo:  
 echo New Policy:
 powershell "Get-ExecutionPolicy"
+exit /b 0

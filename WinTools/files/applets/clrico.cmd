@@ -11,10 +11,11 @@ if %errorLevel% equ 0 (
 )
 :top
 taskkill /f /im explorer.exe
-cd /d %LOCALAPPDATA%\Microsoft\Windows\Explorer
-attrib -h "iconcache_*.db"
-del "iconcache_*.db"
-cd /d %LOCALAPPDATA%\Microsoft\Windows\Explorer
-attrib -h "thumbcache_*.db"
-del "thumbcache_*.db"
+attrib -h "%localappdata%\IconCache.db"
+del /f /s /q /a "%localappdata%\IconCache.db"
+attrib -h "%localappdata%\Microsoft\Windows\Explorer\iconcache_*.db"
+del /f /s /q /a "%localappdata%\Microsoft\Windows\Explorer\iconcache_*.db"
+attrib -h "%localappdata%\Microsoft\Windows\Explorer\thumbcache_*.db"
+del /f /s /q /a "%localappdata%\Microsoft\Windows\Explorer\thumbcache_*.db"
 start explorer.exe
+exit /b 0
