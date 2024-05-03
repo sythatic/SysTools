@@ -13,7 +13,7 @@ SetupIconFile=.\files\icon.ico
 DiskSpanning=no
 UninstallDisplayName=WinTools
 UninstallFilesDir={win}\wintools
-UninstallDisplayIcon={win}\wintools\unins000.exe
+UninstallDisplayIcon={win}\wintools\icon.ico
 
 [Files] 
 Source: ".\files\shortcuts\*"; DestDir: "{commonprograms}\Administrative Tools"; Flags: ignoreversion recursesubdirs createallsubdirs
