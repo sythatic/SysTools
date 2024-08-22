@@ -1,15 +1,12 @@
 @echo off & title Appx Manager
 net session >nul 2>&1
-if %errorLevel% equ 0 (
-    goto top
-) else (
+if %errorLevel% neq 0 (
     echo:
     echo [43m This script must be run as Administrator [0m
     echo:
     pause
     exit
 )
-:top
 cd %SystemRoot%
 echo:
 echo [91m    [IMPORTANT NOTICE] [0m

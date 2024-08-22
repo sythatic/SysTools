@@ -1,15 +1,12 @@
 @echo off & title System Information Editor
 net session >nul 2>&1
-if %errorLevel% equ 0 (
-    goto top
-) else (
+if %errorLevel% neq 0 (
     echo:
     echo [43m This script must be run as Administrator [0m
     echo:
     pause
     exit
 )
-:top
 echo:
 echo   [7m Enter System/OEM Information [0m
 echo:

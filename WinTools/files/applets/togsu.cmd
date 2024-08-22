@@ -8,9 +8,10 @@ if %errorLevel% neq 0 (
     exit
 )
 :cmd
-echo Would you like to activate the built in Administrator account?
-echo Input Y or N
-
+echo:
+echo   Would you like to activate the built in Administrator account?
+echo   Input Y or N
+echo:
 set "modify="
 set /p modify="[0m  $: "
 if /i "%modify%"=="y" (
@@ -26,11 +27,11 @@ if /i "%modify%"=="n" (
     exit /b 0
 ) else (
     echo:
-    echo [93m    [Option Not Found]
+    echo [93m    [Option Not Found] [0m
     echo:
     goto cmd
 )
 echo:
-echo [91m    [Error]
+echo [91m    [Error] [0m
 echo:
 goto cmd

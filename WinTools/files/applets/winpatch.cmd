@@ -1,4 +1,4 @@
-@echo off & title WinPatch
+@echo off & title WinPatch & mode con cols=75 lines=16
 net session >nul 2>&1
 if %errorLevel% neq 0 (
     echo:
@@ -8,11 +8,12 @@ if %errorLevel% neq 0 (
     exit
 )
 :cmd
-echo Make Windows 11 function more like it's predecessors. 
-:echo
-echo use 'install' to merge the modified registry keys.
-echo use 'remove' to reset modified values to default.
-
+echo:
+echo   Make Windows 11 function more like it's predecessors. 
+echo:
+echo   use 'install' to merge the modified registry keys.
+echo   use 'remove' to reset modified values to default.
+echo:
 set "modify="
 set /p modify="[0m  $: "
 if /i "%modify%"=="install" (
@@ -228,11 +229,11 @@ start explorer.exe
 exit /b 0
 ) else (
     echo:
-    echo [93m    [Option Not Found]
+    echo [93m    [Option Not Found][0m
     echo:
     goto cmd
 )
 echo:
-echo [91m    [Error]
+echo [91m    [Error][0m
 echo:
 goto cmd

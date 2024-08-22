@@ -1,9 +1,7 @@
 @echo off & title WinTools
 setlocal EnableDelayedExpansion
 net session >nul 2>&1
-if %errorLevel% equ 0 (
-    goto top
-) else (
+if %errorLevel% neq 0 (
     echo:
     echo [43m WinTools must be run as Administrator [0m
     echo:
@@ -30,7 +28,7 @@ echo:
 :prompt
 set /p choice="[0m  $: "
 if not defined applet[%choice%] (
-    echo [91m    [Invalid Entry]
+    echo [91m    [Invalid Entry] [0m
     echo:
     goto prompt
 )
@@ -42,5 +40,5 @@ for /f "delims=" %%a in ('type "%selectedApplet%"') do set "appletID=%%a"
 set choice=
 goto prompt
 echo:
-echo [91m    [ERROR]
+echo [91m    [ERROR] [0m
 echo:
