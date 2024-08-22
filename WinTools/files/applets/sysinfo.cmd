@@ -1,4 +1,4 @@
-@echo off & title System OEM Information Editor
+@echo off & title System Information Editor
 net session >nul 2>&1
 if %errorLevel% equ 0 (
     goto top
@@ -11,7 +11,7 @@ if %errorLevel% equ 0 (
 )
 :top
 echo:
-echo   [7m Enter System Information [0m
+echo   [7m Enter System/OEM Information [0m
 echo:
 set /p brand="[0m  Manufacturer: "
 echo:

@@ -5,7 +5,7 @@ if %errorLevel% equ 0 (
     goto top
 ) else (
     echo:
-    echo [43m This script must be run as Administrator [0m
+    echo [43m WinTools must be run as Administrator [0m
     echo:
     pause
     exit
@@ -13,7 +13,7 @@ if %errorLevel% equ 0 (
 :top
 echo:
 echo   [104m WinTools [0m
-echo   [90m2405 [0m
+echo   [90m2408 [0m
 echo:
 cd %SystemRoot%
 echo   ID   Applet

@@ -1,4 +1,4 @@
-@echo off
+@echo off & title PowerShell Policy Editor
 net session >nul 2>&1
 if %errorLevel% equ 0 (
     goto top

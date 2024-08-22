@@ -1,4 +1,4 @@
-@echo off
+@echo off & title Webloc Converter
 setlocal EnableDelayedExpansion
 
 for %%F in (*.webloc) do (

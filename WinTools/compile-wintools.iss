@@ -1,11 +1,11 @@
 [Setup]
 Uninstallable=yes
 AppName=WinTools
-AppVersion=2405
+AppVersion=2408
 AppPublisher=Sythatic
 CreateAppDir=no
 OutputDir=.\releases
-OutputBaseFilename=wintools-setup-2405
+OutputBaseFilename=wintools-setup-2408
 Compression=none
 SolidCompression=yes
 DefaultDirName={win}\wintools\

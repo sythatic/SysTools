@@ -1,4 +1,4 @@
-@echo off & title WinTools
+@echo off & title HTTP Index Downloader
 net session >nul 2>&1
 if %errorLevel% equ 0 (
     goto top

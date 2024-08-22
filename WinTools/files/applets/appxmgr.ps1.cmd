@@ -1,4 +1,4 @@
-@echo off & title WinTools
+@echo off & title Appx Manager
 net session >nul 2>&1
 if %errorLevel% equ 0 (
     goto top

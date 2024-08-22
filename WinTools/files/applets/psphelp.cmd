@@ -1,4 +1,4 @@
-@echo off & title Execution Policies & mode con cols=120 lines=35
+@echo off & title PowerShell Policy Editor & mode con cols=120 lines=35
 echo:
 echo  [46m Powershell Execution Policies [0m
 echo: 

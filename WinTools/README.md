@@ -92,10 +92,6 @@
 >    - `sysinfo.cmd`
 >    - Allows the user to set system information, such as manufacturer, model, and support URL.
 > 
-> **Bypass TPM Appraisers**
-> 
->    - `tpmbypass.cmd`
->    - Allows the installation of Windows 11 on unsupported PCs.
 > 
 > **[Webloc Converter](https://github.com/sythatic/Webloc-Decoder)**
 > 

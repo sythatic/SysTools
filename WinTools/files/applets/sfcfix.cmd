@@ -1,4 +1,4 @@
-@echo off
+@echo off & title System File Checker
 net session >nul 2>&1
 if %errorLevel% equ 0 (
     goto top

@@ -1,4 +1,4 @@
-@echo off & title Batch Colors & mode con cols=35 lines=51
+@echo off & title Batch Color Code & mode con cols=35 lines=51
 echo:
 echo  Batch [91mC[93mo[92ml[96mo[94mr[95ms[0m
 echo:
