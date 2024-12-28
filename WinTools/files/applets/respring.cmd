@@ -1,4 +1,5 @@
+REM Restart Windows Explorer
 @echo off
 taskkill /f /im explorer.exe
 start explorer.exe
-exit /b 0
+exit /b 0 
